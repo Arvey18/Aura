@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>Aura</title>
-		<link rel = "stylesheet" href = "CSS/style.css" />
+		<link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="CSS/style.css" />
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:200">
 	</head>
 	<body>
@@ -103,19 +104,19 @@
 				<h3>Services</h3>
 				<div id="servicesContainer">
 					<div id="serviceOne">
-						<div class="iconContainer"></div>
+						<div class="iconContainer"><i class="fa fa-bolt"></i></div>
 						<div class="serviceTitle">Easy customizable</div>
 						<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense!</p>
 						<a class="serviceButton" href="">MORE</a>
 					</div>
 					<div id="serviceTwo">
-						<div class="iconContainer"></div>
+						<div class="iconContainer"><i class="fa fa-mobile-phone"></i></div>
 						<div class="serviceTitle">Responsive</div>
 						<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense!</p>
 						<a class="serviceButton" href="">MORE</a>
 					</div>
 					<div id="serviceThree">
-						<div class="iconContainer"></div>
+						<div class="iconContainer"><i class="fa fa-heart"></i></div>
 						<div class="serviceTitle">Color options</div>
 						<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense!</p>
 						<a class="serviceButton" href="">MORE</a>
@@ -147,22 +148,27 @@
 						<h3>Get in touch with us</h3>
 					</div>
 					<div id="contactsForm">
-						<h3>Name:</h3>
-						<input class="text-field" type="text" maxlength="500">
-						<h3>Contact #:</h3>
-						<input class="text-field" type="text" maxlength="500">
-						<h3>Email:</h3>
-						<input class="text-field" type="text" maxlength="500">
-						<h3>Message:</h3>
-						<textarea id="textArea"></textarea>
-						<button id="buttonName">SEND</button>
+						<input class="text-field" type="text" maxlength="500" placeholder="Name">
+						<input class="text-field" type="text" maxlength="500" placeholder="Email">
+						<textarea id="textArea" placeholder="Message"></textarea>
+						<input type="submit" value="Send" id="buttonName">
 					</div>
 					<div id="widgets">
 						<div id="address">
-							
+							<h4>Address</h4>
+							<p>P. Sherman <br/>
+							42, Wallaby Way, <br/>
+							Sydney, Australlia</p>
 						</div>
 						<div id="followUs">
-							
+							<h4>Follow us</h4>
+							<div id="linksContainer">
+								<a target="_blank" href="https://www.facebook.com/"><div class="link-box"><i class="fa fa-facebook"></i></div></a>
+								<a target="_blank" href="https://www.twitter.com"><div class="link-box"><i class="fa fa-twitter"></i></div></a>
+								<a target="_blank" href="https://www.youtube.com"><div class="link-box"><i class="fa fa-youtube"></i></div></a>
+								<a target="_blank" href="https://www.google.com"><div class="link-box"><i class="fa fa-google-plus"></i></div></a>
+
+							</div>
 						</div>
 						
 					</div>
@@ -174,3 +180,4 @@
 	<script type="text/javascript" src = "JS/main.js"></script>
 
 </html>
+
