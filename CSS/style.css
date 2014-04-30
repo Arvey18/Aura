@@ -73,7 +73,7 @@ body {
 
 #ourWorks {
   width: 100%;
-  height: 950px;
+  height: auto;
   position: relative;
   background: white;
   text-align: center; }
@@ -107,7 +107,8 @@ body {
 
 #ourWorksImg {
   margin-left: 80px;
-  margin-right: 80px; }
+  margin-right: 80px;
+  margin-bottom: 80px; }
   #ourWorksImg img {
     width: 350px;
     height: 250px;
@@ -141,7 +142,7 @@ body {
   background: url("../resources/2.jpg") no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  height: 500px;
+  height: 550px;
   position: relative; }
   #oneMorePage p {
     color: white;
@@ -164,3 +165,310 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 2px; }
+
+#pageBuilder {
+  width: 100%;
+  height: 500px;
+  position: relative; }
+  #pageBuilder img {
+    position: absolute;
+    left: 95px;
+    top: 80px; }
+  #pageBuilder h2 {
+    position: absolute;
+    left: 700px;
+    top: 170px;
+    color: #575555;
+    font-weight: 600;
+    font-size: 30px; }
+  #pageBuilder p {
+    line-height: 25px;
+    font-size: 13px;
+    color: #7b7b7b;
+    font-weight: normal;
+    margin-right: 95px; }
+
+#pageBuilderSlider {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  padding-bottom: 100px; }
+
+#sliderBG {
+  margin: 0 auto;
+  width: 85%;
+  height: 250px; }
+  #sliderBG img {
+    width: 100%;
+    height: 250px;
+    padding-bottom: 70px; }
+
+#ourTeamContainer {
+  width: 100%;
+  height: 420px;
+  position: relative; }
+  #ourTeamContainer #ourTeam {
+    position: relative;
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+    padding-top: 30px; }
+    #ourTeamContainer #ourTeam #teamMotto {
+      width: 250px;
+      height: 100%;
+      float: left; }
+      #ourTeamContainer #ourTeam #teamMotto h3 {
+        font-size: 40px;
+        color: #333333;
+        font-weight: 500; }
+      #ourTeamContainer #ourTeam #teamMotto p {
+        font-family: 'Raleway', Arial, sans-serif;
+        line-height: 25px;
+        font-size: 13px;
+        color: #7b7b7b;
+        font-weight: normal;
+        margin-top: -30px; }
+    #ourTeamContainer #ourTeam #staffImage {
+      height: 100%;
+      margin-left: 20px;
+      width: 75%;
+      float: left; }
+      #ourTeamContainer #ourTeam #staffImage img {
+        position: relative;
+        margin-top: 55px; }
+      #ourTeamContainer #ourTeam #staffImage #staffOneImage {
+        height: 100%;
+        width: 32%;
+        float: left;
+        margin-right: 20px; }
+      #ourTeamContainer #ourTeam #staffImage #staffTwoImage {
+        height: 100%;
+        width: 32%;
+        float: left;
+        margin-right: 20px; }
+      #ourTeamContainer #ourTeam #staffImage #staffThreeImage {
+        height: 100%;
+        width: 30%;
+        float: left; }
+
+#ourMusic {
+  background: url("../resources/music-bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 380px;
+  text-align: center;
+  position: relative; }
+  #ourMusic h1 {
+    padding-top: 90px;
+    font-size: 48px;
+    color: #fff; }
+
+#services {
+  position: relative;
+  background: white;
+  width: 100%;
+  height: 530px;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  #services h3 {
+    position: relative;
+    font-size: 35px;
+    color: black;
+    top: 80px;
+    margin: 0 auto;
+    font-weight: 500; }
+  #services #servicesContainer {
+    position: relative;
+    top: 150px;
+    width: 85%;
+    margin: 0 auto;
+    height: auto; }
+    #services #servicesContainer #serviceOne {
+      height: 100%;
+      width: 367px;
+      float: left;
+      position: relative; }
+    #services #servicesContainer #serviceTwo {
+      height: auto;
+      width: 367px;
+      float: left;
+      position: relative; }
+    #services #servicesContainer #serviceThree {
+      height: auto;
+      width: 367px;
+      float: left;
+      position: relative; }
+    #services #servicesContainer .iconContainer {
+      border: 2px solid #8dd831;
+      border-radius: 100%;
+      width: 72px;
+      height: 72px;
+      margin: 0 auto;
+      position: relative; }
+    #services #servicesContainer .serviceTitle {
+      font-size: 20px;
+      font-weight: 400;
+      color: #575555;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      position: relative; }
+    #services #servicesContainer p {
+      line-height: 25px;
+      font-size: 13px;
+      color: #7b7b7b;
+      font-weight: normal;
+      margin-bottom: 50px;
+      position: relative; }
+    #services #servicesContainer .serviceButton {
+      border: 1px solid #8dd831;
+      padding: 13px 40px;
+      font-weight: 700;
+      color: #8dd831;
+      border-radius: 2px;
+      margin: 20px 0;
+      text-decoration: none;
+      position: relative; }
+
+#testimonials {
+  width: 100%;
+  height: 272px;
+  background: #d8d6d1;
+  position: relative; }
+  #testimonials #sliderContainer {
+    width: 85%;
+    margin: 0 auto; }
+
+#testimonialTitle {
+  float: left;
+  width: 200px; }
+  #testimonialTitle h3 {
+    padding-top: 60px;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500; }
+
+#testimonialSlider {
+  float: left;
+  margin-left: 30px;
+  width: 79%;
+  height: 272px; }
+
+#video {
+  position: relative;
+  background: black;
+  width: 100%;
+  height: 300px; }
+
+#skills {
+  position: relative;
+  background: #292929;
+  width: 100%;
+  height: 350px;
+  text-align: center; }
+  #skills h3 {
+    position: relative;
+    font-size: 35px;
+    color: white;
+    top: 80px;
+    margin: 0 auto;
+    font-weight: 500; }
+
+#buyLayer {
+  background: #8dd831;
+  width: 100%;
+  height: 130px;
+  text-align: center; }
+  #buyLayer p {
+    position: relative;
+    display: inline; }
+  #buyLayer h3 {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    top: 50px;
+    left: -100px; }
+  #buyLayer a {
+    border: 1px solid white;
+    padding: 10px 30px;
+    font-weight: 700;
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+    position: relative;
+    left: 200px;
+    top: 20px; }
+
+#buyLayerContainer {
+  width: 85%;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 26px;
+  position: relative; }
+
+#contacts {
+  background: url("../resources/contacts.jpg") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 700px; }
+
+#contactsContainer {
+  width: 85%;
+  height: 500px;
+  margin: 0 auto; }
+
+#contactsMotto {
+  float: left;
+  width: 200px; }
+  #contactsMotto h3 {
+    padding-top: 60px;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500; }
+
+#contactsForm {
+  width: 600px;
+  height: 400px;
+  float: left;
+  margin-top: 20px; }
+  #contactsForm .text-field {
+    width: 500px;
+    height: 40px;
+    margin-top: -10px;
+    margin-left: 20px;
+    background: black;
+    opacity: 0.4;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 16px; }
+  #contactsForm h3 {
+    margin-left: 20px;
+    color: #8dd831; }
+  #contactsForm #textArea {
+    margin-top: -10px;
+    margin-left: 20px;
+    width: 500px;
+    height: 200px;
+    resize: none;
+    background: black;
+    opacity: 0.4;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 16px; }
+  #contactsForm #buttonName {
+    display: block;
+    margin-left: 20px;
+    margin-top: 30px;
+    background: none;
+    border: 1px solid #8dd831;
+    color: #8dd831;
+    padding: 10px 30px; }
+
+#widgets {
+  float: left;
+  width: 300px;
+  height: 400px; }
