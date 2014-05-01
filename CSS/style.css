@@ -81,6 +81,18 @@ body {
     overflow: hidden; }
   #homeContainerSlider li {
     overflow: hidden; }
+  #homeContainerSlider #pagination {
+    position: absolute;
+    top: 500px;
+    left: 630px; }
+  #homeContainerSlider i {
+    font-size: 14px;
+    color: #d9d9d9; }
+  #homeContainerSlider #paginationIcon1 {
+    float: left;
+    margin-right: 5px; }
+  #homeContainerSlider #paginationIcon2 {
+    float: left; }
 
 #ourWorks {
   width: 100%;

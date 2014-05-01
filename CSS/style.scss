@@ -72,10 +72,7 @@ body{
 			left: 95px;
 			top: 14px;
 		}
-
-
 	}
-
 }
 
 #logoContainer{
@@ -98,6 +95,22 @@ body{
 	}
 	li{
 		overflow: hidden;
+	}
+	#pagination{
+		position: absolute;
+		top: 500px;
+		left: 630px;
+	}
+		i{
+			font-size: 14px;
+			color: #d9d9d9;
+		}
+	#paginationIcon1{
+		float: left;
+		margin-right: 5px;
+	}
+	#paginationIcon2{
+		float: left;
 	}
 }
 
