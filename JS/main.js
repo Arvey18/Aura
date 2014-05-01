@@ -1,38 +1,99 @@
-$(document).ready(function(){
 
-    // // $('#homeContainer').css('margin-top', '-657px');
-    // $(window).bind('scroll',function(e){
-    //     parallaxScroll();
 
-    //     // if($(window).scrollTop == 0);{
-    //     // $('#contactsBG').css('margin-top': '700px');
-    //     // }
-    // });
     //Navigation Scroll
     $(".scroll").click(function(event){
-         event.preventDefault();
+        event.preventDefault();
          //calculate destination place
-         var destination=0;
-         if($(this.hash).offset().top > $(document).height()-             
-            $(window).height()){
-              destination=$(document).height()-$(window).height();
-         }else{
+        var destination=0;
+        if($(this.hash).offset().top > $(document).height()-             
+          $(window).height()){
+            destination=$(document).height()-$(window).height();
+        }else{
               destination=$(this.hash).offset().top;
-         }
+        }
          //go to destination
-         $('html,body').animate({scrollTop:destination},1000,'swing');
+        $('html,body').animate({scrollTop:destination},1000,'swing');
+
+    });
+    //Navigation fadeIn Effect
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 700) {
+        $( "#navigation" ).fadeIn();
+      } else {
+        $( "#navigation" ).fadeOut();
+      }
+    });
+
+    $('#allworks').click(function(){
+      $('.worksNav').css('background', 'none');
+      $('#allworks').css('background','#f5f5f5');
+      $('.worksImages').css('opacity', '1.0');
+      return false;
 
     });
 
+    $('#designWorks').click(function(){
+      $('.worksNav').css('background', 'none');
+      $('#designWorks').css('background','#f5f5f5');
+      $('.worksImages').css('opacity', '1.0');
+      $('#workImg1').css('opacity', '0.1');
+      $('#workImg3').css('opacity', '0.1');
+      return false;
 
-});
+    });
 
+    $('#illuWorks').click(function(){
+      $('.worksNav').css('background', 'none');
+      $('#illuWorks').css('background','#f5f5f5');
+      $('.worksImages').css('opacity', '1.0');
+      $('#workImg3').css('opacity', '0.1');
+      $('#workImg4').css('opacity', '0.1');
+      $('#workImg5').css('opacity', '0.1');
+      $('#workImg6').css('opacity', '0.1');
+      return false;
 
+    });
 
-// function parallaxScroll(){
-//     var scrolledY = $(window).scrollTop();
-//     $('#homeBG').css('top', +((scrolledY*0.5))+'px');
-//     // $('#oneMoreBG').css('top','-'+((scrolledY*0.2))+'px');
-//     // $('#ourMusicBG').css('top','-'+((scrolledY*0.2))+'px');
-//     // $('#contactsBG').css('top','-'+((scrolledY*0.2))+'px');
-// }
+    $('#marketingWorks').click(function(){
+      $('.worksNav').css('background', 'none');
+      $('#marketingWorks').css('background','#f5f5f5');
+      $('.worksImages').css('opacity', '1.0');
+      $('#workImg1').css('opacity', '0.1');
+      $('#workImg4').css('opacity', '0.1');
+      $('#workImg6').css('opacity', '0.1');
+      return false;
+
+    });
+
+    $('#printWorks').click(function(){
+      $('.worksNav').css('background', 'none');
+      $('#printWorks').css('background','#f5f5f5');
+      $('.worksImages').css('opacity', '1.0');
+      $('#workImg1').css('opacity', '0.1');
+      $('#workImg3').css('opacity', '0.1');
+      $('#workImg6').css('opacity', '0.1');
+      return false;
+
+    });
+
+    $('#typWorks').click(function(){
+      $('.worksNav').css('background', 'none');
+      $('#typWorks').css('background','#f5f5f5');
+      $('.worksImages').css('opacity', '1.0');
+      $('#workImg2').css('opacity', '0.1');
+      $('#workImg4').css('opacity', '0.1');
+      $('#workImg5').css('opacity', '0.1');
+      $('#workImg6').css('opacity', '0.1');
+      return false;
+
+    });
+
+    $('#webWorks').click(function(){
+      $('.worksNav').css('background', 'none');
+      $('#webWorks').css('background','#f5f5f5');
+      $('.worksImages').css('opacity', '1.0');
+      $('#workImg3').css('opacity', '0.1');
+      $('#workImg6').css('opacity', '0.1');
+      return false;
+    });
+    
