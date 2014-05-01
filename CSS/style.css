@@ -3,13 +3,22 @@ body {
   padding: 0;
   font-family: 'Raleway', Arial, sans-serif; }
 
-#homeContainer {
-  position: relative;
-  background: url("../resources/homepage-bg.jpg") no-repeat;
-  background-size: 100% 100%;
+#homeBG {
   height: 657px;
   width: 100%;
-  margin: 0; }
+  background: url("../resources/homepage-bg.jpg") no-repeat fixed;
+  background-size: 100% 100%;
+  margin: 0;
+  position: relative;
+  z-index: 3; }
+
+#homeContainer {
+  position: relative;
+  background: transparent;
+  height: 657px;
+  width: 100%;
+  margin-top: -657px;
+  z-index: 10; }
   #homeContainer h1 {
     color: white;
     text-align: center;
@@ -25,13 +34,15 @@ body {
     #homeContainer h1 span {
       color: #8dd831; }
   #homeContainer #navigation {
-    z-index: 10;
+    z-index: 1000;
     position: fixed;
     background: white;
     width: 100%;
     height: 75px;
     margin: 0;
-    border-bottom: 1px solid #F0F0F0; }
+    border-bottom: 1px solid #F0F0F0;
+    top: 0;
+    display: none; }
     #homeContainer #navigation ul {
       font-family: 'Raleway', Arial, sans-serif;
       font-size: 12px;
@@ -73,10 +84,11 @@ body {
 
 #ourWorks {
   width: 100%;
-  height: auto;
+  height: 945px;
   position: relative;
   background: white;
-  text-align: center; }
+  text-align: center;
+  z-index: 5; }
   #ourWorks p {
     padding-top: 80px;
     color: black;
@@ -108,18 +120,20 @@ body {
 #ourWorksImg {
   margin-left: 80px;
   margin-right: 80px;
-  margin-bottom: 80px; }
+  position: relative; }
   #ourWorksImg img {
     width: 350px;
     height: 250px;
     margin-left: 26px;
-    margin-top: 45px; }
+    margin-top: 45px;
+    position: relative; }
 
 #ourClients {
   background: #8dd831;
   width: 100%;
   height: 200px;
-  position: relative; }
+  position: relative;
+  z-index: 5; }
   #ourClients #logo1 {
     position: absolute;
     left: 95px;
@@ -138,12 +152,22 @@ body {
     right: 95px;
     top: 65px; }
 
-#oneMorePage {
-  background: url("../resources/2.jpg") no-repeat;
+#oneMoreBG {
+  background: url("../resources/2.jpg") no-repeat fixed;
   background-size: 100% 100%;
   width: 100%;
   height: 550px;
-  position: relative; }
+  position: relative;
+  z-index: 4; }
+
+#oneMorePage {
+  background: transparent;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 550px;
+  margin-top: -550px;
+  position: relative;
+  z-index: 5; }
   #oneMorePage p {
     color: white;
     font-size: 35px;
@@ -169,7 +193,9 @@ body {
 #pageBuilder {
   width: 100%;
   height: 500px;
-  position: relative; }
+  position: relative;
+  background: white;
+  z-index: 5; }
   #pageBuilder img {
     position: absolute;
     left: 95px;
@@ -192,21 +218,26 @@ body {
   position: relative;
   width: 100%;
   height: 200px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  background: white;
+  z-index: 5; }
 
 #sliderBG {
   margin: 0 auto;
   width: 85%;
-  height: 250px; }
+  height: 250px;
+  z-index: 5; }
   #sliderBG img {
     width: 100%;
     height: 250px;
     padding-bottom: 70px; }
 
 #ourTeamContainer {
+  z-index: 5;
   width: 100%;
   height: 420px;
-  position: relative; }
+  position: relative;
+  background: white; }
   #ourTeamContainer #ourTeam {
     position: relative;
     margin: 0 auto;
@@ -251,13 +282,23 @@ body {
         width: 30%;
         float: left; }
 
-#ourMusic {
-  background: url("../resources/music-bg.jpg") no-repeat;
+#ourMusicBG {
+  background: url("../resources/music-bg.jpg") no-repeat fixed;
   background-size: 100% 100%;
   width: 100%;
-  height: 380px;
+  height: 350px;
+  position: relative;
+  z-index: 2; }
+
+#ourMusic {
+  background: transparent;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 350px;
   text-align: center;
-  position: relative; }
+  position: relative;
+  z-index: 5;
+  margin-top: -350px; }
   #ourMusic h1 {
     padding-top: 90px;
     font-size: 48px;
@@ -270,7 +311,8 @@ body {
   height: 530px;
   margin: 0;
   padding: 0;
-  text-align: center; }
+  text-align: center;
+  z-index: 5; }
   #services h3 {
     position: relative;
     font-size: 35px;
@@ -340,14 +382,17 @@ body {
   width: 100%;
   height: 272px;
   background: #d8d6d1;
-  position: relative; }
+  position: relative;
+  z-index: 5; }
   #testimonials #sliderContainer {
     width: 85%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    z-index: 5; }
 
 #testimonialTitle {
   float: left;
-  width: 200px; }
+  width: 200px;
+  z-index: 5; }
   #testimonialTitle h3 {
     padding-top: 60px;
     font-size: 35px;
@@ -358,20 +403,23 @@ body {
   float: left;
   margin-left: 30px;
   width: 79%;
-  height: 272px; }
+  height: 272px;
+  z-index: 5; }
 
 #video {
   position: relative;
   background: black;
   width: 100%;
-  height: 300px; }
+  height: 300px;
+  z-index: 5; }
 
 #skills {
   position: relative;
   background: #292929;
   width: 100%;
   height: 350px;
-  text-align: center; }
+  text-align: center;
+  z-index: 5; }
   #skills h3 {
     position: relative;
     font-size: 35px;
@@ -384,7 +432,10 @@ body {
   background: #8dd831;
   width: 100%;
   height: 130px;
-  text-align: center; }
+  text-align: center;
+  z-index: 5;
+  position: relative;
+  margin: 0; }
   #buyLayer p {
     position: relative;
     display: inline; }
@@ -414,22 +465,36 @@ body {
   height: 100px;
   margin: 0 auto;
   text-align: center;
-  position: relative; }
+  position: relative;
+  z-index: 5; }
 
-#contacts {
-  background: url("../resources/contacts.jpg") no-repeat;
+#contactsBG {
+  background: url("../resources/contacts.jpg") no-repeat fixed;
   background-size: 100% 100%;
   width: 100%;
-  height: 700px; }
+  height: 700px;
+  position: relative;
+  z-index: 1; }
+
+#contacts {
+  background: transparent;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 700px;
+  margin-top: -700px;
+  position: relative;
+  z-index: 5; }
 
 #contactsContainer {
   width: 85%;
   height: 500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 5; }
 
 #contactsMotto {
   float: left;
-  width: 235px; }
+  width: 235px;
+  z-index: 5; }
   #contactsMotto h3 {
     padding-top: 40px;
     font-size: 48px;
@@ -440,7 +505,8 @@ body {
   width: 565px;
   height: 400px;
   float: left;
-  margin-top: 85px; }
+  margin-top: 85px;
+  z-index: 5; }
   #contactsForm .text-field {
     width: 500px;
     height: 40px;
@@ -485,7 +551,8 @@ body {
 #widgets {
   float: left;
   width: 300px;
-  height: 400px; }
+  height: 400px;
+  z-index: 5; }
   #widgets #address {
     width: 100%;
     height: 50px;
@@ -501,7 +568,8 @@ body {
   #widgets #followUs {
     width: 100%;
     height: 250px;
-    color: white; }
+    color: white;
+    z-index: 5; }
     #widgets #followUs h4 {
       margin-top: 95px;
       margin-bottom: 20px;
