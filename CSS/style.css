@@ -1,20 +1,23 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
   font-family: 'Raleway', Arial, sans-serif !important; }
 
-#wrapper {
-  width: 100%;
-  padding: 0;
-  margin: 0; }
-
 #homeContainer {
-  position: relative;
-  background: url("../resources/homepage-bg.jpg") no-repeat fixed;
-  background-size: 100% 100%;
+  background: url("../resources/homepage-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: auto;
-  width: 100%; }
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
   #homeContainer h1 {
     color: white;
     text-align: center;
@@ -25,12 +28,9 @@ body {
     margin: 0 auto; }
     #homeContainer h1 span {
       color: #8dd831; }
-  #homeContainer #responsiveButton {
-    position: relative; }
   #homeContainer #navigations {
     background: white;
     width: 100%;
-    height: auto;
     border-bottom: 1px solid #F0F0F0;
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 12px;
@@ -58,31 +58,32 @@ body {
 
 #logoContainer {
   padding-top: 100px;
-  width: 150px;
   height: auto;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  display: table; }
   #logoContainer img {
-    width: 120px; }
+    margin: 0 auto;
+    width: 120px;
+    height: auto;
+    margin: 0 auto; }
 
 #slider {
-  overflow: hidden;
-  height: auto;
-  width: auto; }
+  overflow: hidden; }
 
 #homeContainerSlider {
   height: 100%;
   width: 100%;
-  padding: 70px 0px; }
+  padding: 80px 0px; }
   #homeContainerSlider ul {
     list-style: none; }
   #homeContainerSlider #pagination {
     text-align: center;
-    width: 60px;
-    height: auto;
     padding-top: 60px;
     position: relative;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    margin: 0 auto;
+    display: table; }
   #homeContainerSlider i {
     font-size: 14px;
     color: #d9d9d9; }
@@ -98,8 +99,6 @@ body {
   margin-bottom: 25px; }
 
 #ourWorks {
-  width: 100%;
-  height: auto;
   position: relative;
   background: white;
   text-align: center;
@@ -115,8 +114,6 @@ body {
     letter-spacing: 1px; }
 
 #ourWorksNav {
-  width: 100%;
-  height: auto;
   position: relative;
   text-align: center; }
   #ourWorksNav li {
@@ -134,11 +131,10 @@ body {
     background: #f5f5f5; }
 
 #ourWorksImg {
-  height: auto;
-  width: 100%;
   position: relative;
-  margin-top: 40px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 20px; }
   #ourWorksImg img {
     width: 100%;
     height: auto;
@@ -205,17 +201,15 @@ body {
 #ourClients {
   background: #8dd831;
   width: 100%;
-  height: auto;
   position: relative;
-  display: block; }
+  display: block;
+  padding: 70px 0px; }
   #ourClients img {
     max-width: 150px;
     max-height: 80px;
     display: block;
     margin: auto;
     height: auto; }
-  #ourClients .clientLogo {
-    margin: 50px 0px; }
   #ourClients #logo1 {
     margin-top: 10px; }
   #ourClients #logo2 {
@@ -229,20 +223,21 @@ body {
   background: url("../resources/2.jpg") no-repeat fixed;
   background-size: 100% 100%;
   width: 100%;
-  height: 550px; }
-  #oneMorePage p {
-    color: white;
-    font-size: 35px;
-    top: 195px;
-    position: relative; }
+  height: 500px;
+  overflow: visible; }
   #oneMorePage h2 {
     position: relative;
-    top: 195px;
-    font-weight: 900; }
+    color: white;
+    font-size: 35px;
+    top: 115px;
+    position: relative;
+    font-weight: 200; }
   #oneMorePage a {
+    top: 135px;
     text-decoration: none;
     color: white;
     font-size: 14px;
+    font-weight: 900;
     border: 1px solid white;
     padding: 14px 40px;
     border-radius: 2px;
@@ -264,7 +259,7 @@ body {
   position: relative;
   background: white;
   z-index: 5;
-  padding-bottom: 100px; }
+  padding: 70px 0px; }
   #pageBuilder img {
     width: 100%;
     height: auto;
@@ -286,11 +281,9 @@ body {
 #pageBuilderSlider {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
   padding-left: 80px;
   padding-right: 80px;
-  padding-top: 40px;
-  padding-bottom: 20px;
   background: white; }
 
 #sliderBG {
@@ -300,19 +293,18 @@ body {
   #sliderBG img {
     position: relative;
     width: 100%;
-    height: auto; }
+    height: 300px; }
 
 #ourTeamContainer {
-  width: 100%;
-  height: auto;
   position: relative;
   background: white;
-  padding-top: 50px;
-  padding-bottom: 100px; }
+  padding: 70px 0px; }
   #ourTeamContainer #ourTeam {
     position: relative;
     width: auto;
     height: auto; }
+    #ourTeamContainer #ourTeam #imgContainer {
+      padding-top: 20px; }
     #ourTeamContainer #ourTeam #teamMotto {
       position: relative; }
       #ourTeamContainer #ourTeam #teamMotto h3 {
@@ -370,11 +362,10 @@ body {
   background: url("../resources/music-bg.jpg") no-repeat fixed;
   background-size: 100% 100%;
   width: 100%;
-  height: 350px;
   text-align: center;
+  padding: 70px 0px;
   z-index: 5; }
   #ourMusic h1 {
-    padding-top: 90px;
     font-size: 48px;
     color: #fff; }
 
@@ -459,14 +450,16 @@ body {
 #testimonials {
   width: 100%;
   height: auto;
+  padding: 70px 0px;
   background: #d8d6d1;
   position: relative; }
 
 #testimonialTitle {
-  position: relative; }
+  position: relative;
+  margin: 0;
+  padding-top: 0; }
   #testimonialTitle h3 {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding: 0;
     font-size: 35px;
     color: #fff;
     font-weight: 500;
@@ -477,8 +470,6 @@ body {
   position: relative;
   width: auto;
   height: auto;
-  margin-top: 60px;
-  margin-bottom: 50px;
   margin-left: 0;
   padding: 0; }
   #testimonialSlider ul {
@@ -488,14 +479,12 @@ body {
     color: #7b7b7b;
     font-weight: 900;
     line-height: 25px; }
-  #testimonialSlider .testimonial-name {
-    margin-top: 10px; }
-    #testimonialSlider .testimonial-name p {
-      font-size: 14px;
-      color: white;
-      font-weight: 900;
-      line-height: 25px;
-      font-family: Arial; }
+  #testimonialSlider .testimonial-name p {
+    font-size: 14px;
+    color: white;
+    font-weight: 900;
+    line-height: 25px;
+    font-family: Arial; }
   #testimonialSlider #pagination {
     position: relative;
     width: auto;
@@ -527,13 +516,12 @@ body {
   height: auto;
   text-align: center;
   z-index: 5;
-  color: white; }
+  color: white;
+  padding: 70px 0; }
   #skills h3 {
     position: relative;
     font-size: 35px;
     color: white;
-    top: 80px;
-    margin-bottom: 100px;
     font-weight: 500; }
 
 #buyLayer {
@@ -587,7 +575,7 @@ body {
   position: relative; }
   #contactsForm .text-field {
     width: 100%;
-    background: #3c3c3c;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     font-size: 14px;
     opacity: 0.9;
@@ -599,7 +587,7 @@ body {
   #contactsForm #textArea {
     width: 100%;
     height: 260px;
-    background: #3c3c3c;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     font-size: 14px;
     opacity: 0.9;
@@ -896,3 +884,108 @@ body {
 
 #linkSlider:hover .slider-arrows {
   display: block; }
+
+div {
+  display: block; }
+
+.music_container .box-title {
+  margin-bottom: 50px; }
+
+.music_player_container {
+  height: 70px;
+  height: auto;
+  background: #353434;
+  /*
+  opacity: 0.88;
+  filter: alpha(opacity=80); */
+  /* For IE8 and earlier */
+  margin: 10px 0;
+  /* 	padding: 25px; */
+  padding: 19px; }
+
+#soundcloud > .container > .music_player_container {
+  background: transparent; }
+
+.music_icons {
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block; }
+
+.music_icons i {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 6px 6px 6px; }
+
+.music_img_overlay {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: absolute;
+  opacity: 0.4; }
+
+/*
+    Document        : mep-feature-playlist.css
+    Author          : Andrew Berezovsky <andrew.berezovsky@gmail.com>
+    Original Author : Junaid Qadir Baloch <shekhanzai.baloch@gmail.com>
+*/
+/* Start: Show/Hide Playlist*/
+.mejs-controls .mejs-show-playlist button {
+  background: transparent url(../resources/controls-playlist.png) no-repeat;
+  background-position: -16px -16px; }
+
+.mejs-controls .mejs-hide-playlist button {
+  background: transparent url(../resources/controls-playlist.png) no-repeat;
+  background-position: -16px 0; }
+
+/* End: Show/Hide Playlist */
+/* Start: Previous */
+.mejs-controls .mejs-prevtrack button {
+  background: transparent url(../resources/controls-playlist.png) no-repeat;
+  background-position: 0 -16px; }
+
+/* End: Previous */
+/* Start: Next */
+.mejs-controls .mejs-nexttrack button {
+  background: transparent url(../resources/controls-playlist.png) no-repeat; }
+
+/* End: Next */
+/* Start: Shuffle */
+.mejs-controls .mejs-shuffle-on button {
+  background: transparent url(../resources/controls-playlist.png) no-repeat;
+  background-position: -32px 0; }
+
+.mejs-controls .mejs-shuffle-off button {
+  background: transparent url(../resources/controls-playlist.png) no-repeat;
+  background-position: -32px -16px; }
+
+/* End: Shuffle */
+/*Start: Playlist*/
+.mejs-playlist {
+  position: absolute;
+  left: 0;
+  height: 200px !important;
+  overflow-y: auto;
+  background: #000000;
+  opacity: 0.8; }
+
+.mejs-playlist ul {
+  margin: 0;
+  padding: 5px; }
+
+.mejs-playlist li {
+  color: white;
+  font-size: 11px;
+  height: 16px;
+  overflow: hidden;
+  margin: 2px;
+  cursor: pointer; }
+
+.mejs-playlist li:hover {
+  color: #a8a8a8; }
+
+.mejs-playlist li.current {
+  color: white;
+  font-weight: bold; }
+
+/*End: Playlist*/

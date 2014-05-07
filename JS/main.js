@@ -5,6 +5,10 @@
   var teamtop = $('#ourTeamContainer').offset().top;
   var musictop = $('#ourMusic').offset().top;
   var servicestop = $('#services').offset().top;
+  var top = $('#homeContainer').outerHeight();
+  var bottom = $('#ourWorks').outerHeight();
+  var totHeight = $(window).height();
+
 
     // Navigation fadeIn Effect and active effect
     $(window).scroll(function() {
@@ -27,28 +31,28 @@
         $( "#homeNav a" ).css("color", "black");
       }
 
-      if ($(this).scrollTop() >= clienttop){
+      if ($(this).scrollTop() >= clienttop - 60){
         $( ".nav-active" ).removeClass("nav-active");
         $( "#clientsNav" ).addClass("nav-active");
         $( ".nav-li a" ).css("color", "#909090");
         $( "#clientsNav a" ).css("color", "black");
       }
 
-      if ($(this).scrollTop() >= teamtop){
+      if ($(this).scrollTop() >= teamtop - 60){
         $( ".nav-active" ).removeClass("nav-active");
         $( "#teamNav" ).addClass("nav-active");
         $( ".nav-li a" ).css("color", "#909090");
         $( "#teamNav a" ).css("color", "black");
       }
 
-      if ($(this).scrollTop() >= musictop){
+      if ($(this).scrollTop() >= musictop - 60){
         $( ".nav-active" ).removeClass("nav-active");
         $( "#musicNav" ).addClass("nav-active");
         $( ".nav-li a" ).css("color", "#909090");
         $( "#musicNav a" ).css("color", "black");
       }
 
-      if ($(this).scrollTop() >= servicestop){
+      if ($(this).scrollTop() >= servicestop - 60){
         $( ".nav-active" ).removeClass("nav-active");
         $( "#serviceNav" ).addClass("nav-active");
         $( ".nav-li a" ).css("color", "#909090");
@@ -79,7 +83,7 @@
               destination = $(this.hash).offset().top;
         }
          //go to destination
-        $('html,body').animate({scrollTop:destination},1000,'swing');
+        $('html,body').animate({scrollTop:destination - 60},1000,'swing');
 
     });
 
