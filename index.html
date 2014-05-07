@@ -4,6 +4,7 @@
 		<title>Aura</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="CSS/mep-feature-playlist.css" />
 		<link rel="stylesheet" href="CSS/animate.css" />
 		<link rel="stylesheet" href="CSS/circular-progress.css" />
 		<link rel="stylesheet" href="CSS/style.css" />
@@ -11,7 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:200">
 	</head>
 	<body>
-		<div id="wrapper" class="container">
+	<!-- 	<div id="wrapper" class="container"> -->
 
 			<div id="workTitleLinks" class="container">
 				<div id="closeButton" class="container">
@@ -97,10 +98,11 @@
 								<li style="display: block;"><h1 class="fadeInUp animated">We concept and create <span>beautiful</span><br/> and useful websites</h1><li>
 								<li style="display: none;"><h1 class="fadeOutDown">Aura is made by a small team of<br/> <span>designers</span> and developers</h1></li>
 							</ul>
-						<div id="pagination" class="container">
+						<div id="pagination">
+
 								<a href="#"><div id="paginationIcon1" class="paginationIcons"><i class="fa fa-circle"></i></div></a>
 								<a href="#"><div id="paginationIcon2" class="paginationIcons test-active"><i class="fa fa-circle-o"></i></div></a>
-							</div>
+						</div>
 						</div>
 					</div>
 			</div>
@@ -120,7 +122,8 @@
 						<li><a id="webWorks" class="works-nav" href="#">Web</a></li>
 					</ul>
 				</div>
-				<div id="ourWorksImg" class="container-fluid col-md-12">
+				<div id="ourWorksImg" class="col-md-12">
+					<div class="">
 					<div class="col-sm-4 img-con">
 						<div class="image-hover-con">
 							<div id="whitePage1" class="white-page"></div>
@@ -211,6 +214,8 @@
 							<img id="workImg6" class="works-images" src="resources/ourworks6.jpg">
 						</div>
 					</div>
+
+				</div>
 				</div>
 			</div>
 
@@ -237,13 +242,16 @@
 			</div>
 
 			<div id="oneMorePage" class="container">
-				<div class="container-fluid col-md-12">
-					<p>One page or multi page, you choose!</p>
-					<h2><a href="">READ MORE</a></h2>
+				<div class="container">
+					<div class="col-md-12">
+						<h2>One page or multi page, you choose!</h2>
+						<a href="">READ MORE</a>
+					</div>
 				</div>
 			</div>
 		
 			<div id="pageBuilder" class="container">
+				<div class="container">
 				<div class="col-lg-12 container-fluid">
 				<div class="col-lg-6">
 					<img id="logo4"src="resources/monitor.png">
@@ -251,6 +259,7 @@
 				<div class="col-lg-6">
 					<h2>Advanced Page builder<h2><br/>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
 				</div>
 				</div>
 			</div>
@@ -262,7 +271,8 @@
 			</div>
 
 			<div id="ourTeamContainer" class="container">
-				<div id="ourTeam" class="col-lg-12">
+				<div class="container">
+				<div id="ourTeam" class="row">
 					<div id="teamMotto" class="col-lg-3">
 						<h3>Meet our amazing team</h3>
 						<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero.</p>
@@ -312,15 +322,27 @@
 				</div>
 				</div>
 			</div>
+			</div>
 
 			<div id="ourMusic" class="container">
+				<div class="container">
 					<h1>Our Music</h1>
+					<div class="music_player_container col-lg-12">
+            <div id="mep_0" class="mejs-container svg mejs-audio" style="width: 400px; height: 30px;">
+            <!-- 	<div class="mejs-inner"><div class="mejs-mediaelement"><audio src="http://aura.umbrella.al/aura/auratest/wp-content/uploads/sites/6/2014/01/Daft-Punk-Get-Lucky.mp3">
+            <source src="http://aura.umbrella.al/aura/auratest/wp-content/uploads/sites/6/2014/01/Daft-Punk-Get-Lucky.mp3" type="audio/mpeg">
+            </audio></div> -->
+           <!--  <div class="mejs-layers"><div class="mejs-poster mejs-layer" style="display: none; width: 400px; height: 30px;"></div><div class="mejs-playlist mejs-layer" style="bottom: -1px; width: 400px; height: 30px; display: none;"><ul class="mejs"><li data-url="http://aura.umbrella.al/aura/auratest/wp-content/uploads/sites/6/2014/01/Daft-Punk-Get-Lucky.mp3" title="Daft-Punk-Get-Lucky.mp3" class="current played">Daft-Punk-Get-Lucky.mp3</li></ul></div></div><div class="mejs-controls"><div class="mejs-button mejs-prevtrack-button mejs-prevtrack"><button type="button" aria-controls="mep_0" title="Previous Track"></button></div><div class="mejs-button mejs-playpause-button mejs-play"><button type="button" aria-controls="mep_0" title="Play/Pause" aria-label="Play/Pause"></button></div><div class="mejs-button mejs-nexttrack-button mejs-nexttrack"><button type="button" aria-controls="mep_0" title="Next Track"></button></div><div class="mejs-button mejs-loop-button mejs-loop-off"><button type="button" aria-controls="mep_0" title="Repeat On/Off"></button></div><div class="mejs-button mejs-shuffle-button mejs-shuffle-off"><button type="button" aria-controls="mep_0" title="Shuffle On/Off"></button></div><div class="mejs-button mejs-playlist-button mejs-show-playlist"><button type="button" aria-controls="mep_0" title="Show/Hide Playlist"></button></div><div class="mejs-time mejs-currenttime-container"><span class="mejs-currenttime">00:00</span></div><div class="mejs-time-rail" style="width: 836px;"><span class="mejs-time-total" style="width: 826px;"><span class="mejs-time-buffering" style="display: none;"></span><span class="mejs-time-loaded" style="width: 825.9999931340647px;"></span><span class="mejs-time-current" style="width: 0px;"></span><span class="mejs-time-handle" style="left: -5px;"></span><span class="mejs-time-float" style="display: none; left: 51px;"><span class="mejs-time-float-current">00:01</span><span class="mejs-time-float-corner"></span></span></span></div><div class="mejs-time mejs-duration-container"><span class="mejs-duration">00:28</span></div><div class="mejs-button mejs-volume-button mejs-mute"><button type="button" aria-controls="mep_0" title="Mute Toggle" aria-label="Mute Toggle"></button></div><div class="mejs-horizontal-volume-slider mejs-mute"><div class="mejs-horizontal-volume-total"></div><div class="mejs-horizontal-volume-current" style="width: 40px;"></div><div class="mejs-horizontal-volume-handle" style="left: 27px;"></div></div></div><div class="mejs-clear"></div></div> --></div>
+                        <!-- <iframe width="100%" height="auto" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/13254460&amp;color=ff6600&amp;auto_play=false&amp;show_artwork=true"></iframe> -->
+        </div>
+        </div>
 			</div>
 
 			<div id="services" class="container">
 				<div id="serviceH3" class="container-fluid">
 					<h3>Services</h3>
 				</div>
+				<div class="container">
 				<div id="servicesContainer" class="container col-md-12">
 					<div id="serviceOne" class="col-sm-4 service-box">
 						<div class="icon-container"><i class="service-icon fa fa-bolt"></i></div>
@@ -341,10 +363,11 @@
 						<a class="service-button" href="">MORE</a>
 					</div>	
 				</div>
+				</div>
 			</div>
 
 			<div id="testimonials" class="container">
-				<div id="sliderContainer" class="container-fluid">
+				<div id="sliderContainer" class="container">
 					<div id="testimonialTitle" class="col-lg-3 col-md-3">
 						<h3>What our clients say</h3>
 					</div>
@@ -371,6 +394,7 @@
 
 			<div id="skills" class="container">
 				<div class="container"><h3>Our Skills</h3></div>
+				<div class="container">
 				<div class="container-fluid col-lg-12">
 					<div class="skill-container col-lg-3">
 						<div class="chart">
@@ -457,6 +481,7 @@
 						
 					</div>
 				</div>
+				</div>
 			</div>
 
 			<div id="buyLayer" class="container">
@@ -494,9 +519,11 @@
 				</div>
 				<a href="#homeContainer"><div id="arrowUp"><i class="fa fa-arrow-up"></i></div></a>
 			</div>
-		</div>
+<!-- 		</div> -->
 	</body>
 	<script type="text/javascript" src="JS/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="JS/mep-feature-playlist.js"></script>
+	<script type="text/javascript" src="JS/mediaelement-and-player.min.js"></script>
 	<script type="text/javascript" src="bootstrap-3.1.1-dist/js/bootstrap.js"></script>
 	<script type="text/javascript" src="JS/jquery.smoothscroll.js"></script>
 	<script type="text/javascript" src="JS/main.js"></script>
