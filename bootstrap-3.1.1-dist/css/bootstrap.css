@@ -6,7 +6,7 @@
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
-  font-family: sans-serif;
+  font-family: 'Raleway',sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -769,6 +769,7 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  padding-top: 20px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -956,6 +957,7 @@ pre code {
   }
   .col-sm-4 {
     width: 33.33333333%;
+    padding-bottom: 40px;
   }
   .col-sm-3 {
     width: 25%;
@@ -1090,6 +1092,9 @@ pre code {
   }
   .col-md-12 {
     width: 100%;
+    padding-right: 55px;
+    padding-left: 55px;
+    padding-bottom: 50px;
   }
   .col-md-11 {
     width: 91.66666667%;
@@ -1257,6 +1262,7 @@ pre code {
   }
   .col-lg-9 {
     width: 75%;
+    padding-right: 35px;
   }
   .col-lg-8 {
     width: 66.66666667%;
@@ -1275,6 +1281,7 @@ pre code {
   }
   .col-lg-3 {
     width: 25%;
+    padding-left: 50px;
   }
   .col-lg-2 {
     width: 16.66666667%;
@@ -3111,6 +3118,7 @@ input[type="button"].btn-block {
   content: "";
   border-top: 0;
   border-bottom: 4px solid;
+  height: 75px;
 }
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
@@ -3663,6 +3671,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -webkit-overflow-scrolling: touch;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+  margin-top: 24px;
+  background: white;
 }
 .navbar-collapse.in {
   overflow-y: auto;
@@ -3681,6 +3691,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-collapse.in {
     overflow-y: visible;
+
   }
   .navbar-fixed-top .navbar-collapse,
   .navbar-static-top .navbar-collapse,
@@ -3738,8 +3749,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
-  padding: 15px 15px;
+  height: 40px;
+  padding: 5px 15px;
   font-size: 18px;
   line-height: 20px;
 }

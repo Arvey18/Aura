@@ -2,168 +2,479 @@
 <html>
 	<head>
 		<title>Aura</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="CSS/animate.css" />
+		<link rel="stylesheet" href="CSS/circular-progress.css" />
 		<link rel="stylesheet" href="CSS/style.css" />
 		<link rel="stylesheet" href="bootstrap-3.1.1-dist/css/bootstrap.css" />
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:200" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:200">
 	</head>
 	<body>
-		<div id="wrapper">
-			<div id="homeBG"></div>
-			<div id="homeContainer">
-					<div id="navigation">
-						<a href="index.html"><img src="../resources/biglogo111.png" alt=""></a>
+		<div id="wrapper" class="container">
+
+			<div id="workTitleLinks" class="container">
+				<div id="closeButton" class="container">
+					<a href="#" class="close-work">
+						<div class="all-works-icon">
+            <i class="fa fa-th"></i>
+        		</div>
+        	</a>
+      	</div>
+      	<div id="workImgcontent" class="container">
+      		<div id="workImgInfo" class="col-lg-3 col-md-3">
+						<h3>Through time</h3>
+						<div id="linkDescription">
+							<p>Identity development for Oxford Exchange, located in downtown Tampa, Florida. Project included logo, stationary, brand guidelines, menu design, custom aprons, packaging and signage. Designed by Studio Birdsall.</p>
+						</div>
+						<div class="check-icon">
+							<i class="fa fa-check"></i>
+							<p>
+								<a href="">Illustration</a>
+							</p>
+						</div>
+						<div class="check-icon">
+							<i class="fa fa-check"></i>
+							<p>
+								<a href="">Illustration</a>
+							</p>
+						</div>
+						<div class="check-icon">
+							<i class="fa fa-check"></i>
+							<p>
+								<a href="">Illustration</a>
+							</p>
+						</div>
+						<a class="view-project-btn" href=""> View Project </a>
+      		</div>
+      		<div id="linkSlider" class="col-lg-9 col-md-3">
+      			<div class="slider-arrows">
+               <a href="#" class="next-slide"><i class="fa fa-angle-right animated fadeInRight"></i></a>
+               <a href="#" class="prev-slide"><i class="fa fa-angle-left animated fadeInLeft"></i></a>
+            </div>
 						<ul>
-							<li><a class="scroll" href="#homeContainer">HOME</a></li>
-							<li><a class="scroll" href="#ourWorks">OUR WORKS</a></li>
-							<li><a class="scroll" href="#ourClients">OUR CLIENTS</a></li>
-							<li><a class="scroll" href="#ourTeamContainer">OUR TEAM</a></li>
-							<li><a class="scroll" href="#ourMusic">OUR MUSIC</a></li>
-							<li><a class="scroll" href="#services">SERVICES</a></li>
-							<li><a class="scroll" href="#">MORE PAGES</a></li>
+							<li class="animated fadeIn"><img src="../resources/tmyk-06.jpg"></li>
+							<li class="fadeIn"><img src="../resources/juncadella_04.jpg"></li>
 						</ul>
+      		</div>
+      	</div>
+			</div>
+
+			<div id="homeContainer" class="container">
+				<div id="navigations" class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+							<button id="responsiveButton" type="button" class="navbar-toggle" data-toggle="collapse" 
+							data-target="#navbar-collapse">
+							  <span class="sr-only">Toggle navigation</span>
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span>
+	     				</button>
+			     		<div>
+								<a class="navbar-brand" href="index.html"><img src="../resources/biglogo111.png" alt=""></a>
+							</div>
+						</div>
+						<div class="collapse navbar-collapse" id="navbar-collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li id="homeNav" class="nav-li nav-active"><a class="scroll" href="#homeContainer">HOME</a></li>
+								<li id="workNav" class="nav-li"><a class="scroll" href="#ourWorks">OUR WORKS</a></li>
+								<li id="clientsNav" class="nav-li"><a class="scroll" href="#ourClients">OUR CLIENTS</a></li>
+								<li id="teamNav" class="nav-li"><a class="scroll" href="#ourTeamContainer">OUR TEAM</a></li>
+								<li id="musicNav" class="nav-li"><a class="scroll" href="#ourMusic">OUR MUSIC</a></li>
+								<li id="serviceNav" class="nav-li"><a class="scroll" href="#services">SERVICES</a></li>
+								<li id="subPagesNav" class="nav-li"><a class="scroll" href="#">MORE PAGES</a></li>
+							</ul>
+						</div>
 					</div>
-					<div id="logoContainer">
+				</div>
+					<div id="logoContainer" class="container-fluid">
 						<a href="#"><img src="../resources/biglogo11.png" alt="" id="logo"></a>
 					</div>
-					<div id="homeContainerSlider">
-						<ul>
-							<li><h1>We concept and create <span>beautiful</span><br/> and useful websites</h1><li>
-							<li><h1>Aura is made by a small team of<br/> <span>designers</span> and developers</h1></li>
-							<div id="pagination">
-								<a href=""><div id="paginationIcon1" class="paginationIcons"><i class="fa fa-circle-o"></i></div></a>
-								<a href=""><div id="paginationIcon2" class="paginationIcons"><i class="fa fa-circle-o"></i></div></a>
+					<div id="homeContainerSlider" class="container col-lg-12">
+						<div id="slidercontainer" class="container ">
+							<ul class="container-fluid" id="homepageSlider">
+								<li style="display: block;"><h1 class="fadeInUp animated">We concept and create <span>beautiful</span><br/> and useful websites</h1><li>
+								<li style="display: none;"><h1 class="fadeOutDown">Aura is made by a small team of<br/> <span>designers</span> and developers</h1></li>
+							</ul>
+						<div id="pagination" class="container">
+								<a href="#"><div id="paginationIcon1" class="paginationIcons"><i class="fa fa-circle"></i></div></a>
+								<a href="#"><div id="paginationIcon2" class="paginationIcons test-active"><i class="fa fa-circle-o"></i></div></a>
+							</div>
 						</div>
-						</ul>
-
 					</div>
 			</div>
-			
 
-			<div id="ourWorks">
+			<div id="ourWorks" class="container">
+				<div id="titleContainer" class="container-fluid">
 				<p>Our Works<span>Check out our latest projects finished by our Agency</span></p>
+				</div>
 				<div id="ourWorksNav">
-					<ul>
-						<li><a id="allworks" class="worksNav"  href="#">All</a></li>
-						<li><a id="designWorks" class="worksNav" href="#">Design</a></li>
-						<li><a id="illuWorks" class="worksNav" href="#">Illustration</a></li>
-						<li><a id="marketingWorks" class="worksNav" href="#">Marketing</a></li>
-						<li><a id="printWorks" class="worksNav" href="#">Print</a></li>
-						<li><a id="typWorks" class="worksNav" href="#">Typography</a></li>
-						<li><a id="webWorks" class="worksNav" href="#">Web</a></li>
+					<ul class="col-sm-12">
+						<li><a id="allworks" class="works-nav"  href="#">All</a></li>
+						<li><a id="designWorks" class="works-nav" href="#">Design</a></li>
+						<li><a id="illuWorks" class="works-nav" href="#">Illustration</a></li>
+						<li><a id="marketingWorks" class="works-nav" href="#">Marketing</a></li>
+						<li><a id="printWorks" class="works-nav" href="#">Print</a></li>
+						<li><a id="typWorks" class="works-nav" href="#">Typography</a></li>
+						<li><a id="webWorks" class="works-nav" href="#">Web</a></li>
 					</ul>
 				</div>
-				<div id="ourWorksImg">
-					<img id="workImg1" class="worksImages" src="../resources/ourworks1.jpg">
-					<img id="workImg2" class="worksImages" src="../resources/ourworks2.jpg">
-					<img id="workImg3" class="worksImages" src="../resources/ourworks3.jpg">
-					<img id="workImg4" class="worksImages" src="../resources/ourworks4.jpg">
-					<img id="workImg5" class="worksImages" src="../resources/ourworks5.jpg">
-					<img id="workImg6" class="worksImages" src="../resources/ourworks6.jpg">
+				<div id="ourWorksImg" class="container-fluid col-md-12">
+					<div class="col-sm-4 img-con">
+						<div class="image-hover-con">
+							<div id="whitePage1" class="white-page"></div>
+							<div class="image-description">
+								<div id="work1Link" class="work-name container"><p><a href="#">Through time</a></p></div>
+								<div class="work-tags container">
+									<p>
+										<a href="">Illustration</a>,<a href="">Typography</a>,<a href="">Web</a>
+									</p>
+								</div>
+								<div class="work-view container"><a href=""><i id="workImg1Search" class="search-icon fa fa-search"></i></a></div>
+							</div>
+							<img id="workImg1" class="works-images" src="../resources/ourworks1.jpg">
+						</div>
+					</div>
+					<div class="col-sm-4 img-con">
+						<div class="image-hover-con">
+							<div id="whitePage2" class="white-page"></div>
+							<div class="image-description">
+								<div class="work-name container"><p><a href="">Flow eight</a></p></div>
+								<div class="work-tags container">
+									<p>
+										<a href="">Design</a>,<a href="">Illustration</a>,<a href="">Marketing</a>,<a href="">Print</a>,<a href="">Web</a>
+									</p>
+								</div>
+								<div class="work-view container"><a href=""><i class="search-icon fa fa-search"></i></a></div>
+							</div>
+							<img id="workImg2" class="works-images" src="../resources/ourworks2.jpg">
+						</div>
+					</div>
+					<div class="col-sm-4 img-con">
+						<div class="image-hover-con">
+							<div id="whitePage3" class="white-page"></div>
+							<div class="image-description">
+								<div class="work-name container"><p><a href="">Midlands branding</a></p></div>
+								<div class="work-tags container">
+									<p>
+										<a href="">Marketing</a>,<a href="">Typography</a>
+									</p>
+								</div>
+								<div class="work-view container"><a href=""><i class="search-icon fa fa-search"></i></a></div>
+							</div>
+							<img id="workImg3" class="works-images" src="../resources/ourworks3.jpg">
+						</div>
+					</div>
+					<div class="col-sm-4 img-con">
+						<div class="image-hover-con">
+							<div id="whitePage4" class="white-page"></div>
+							<div class="image-description">
+								<div class="work-name container"><p><a href="">Knowing</a></p></div>
+								<div class="work-tags container">
+									<p>
+										<a href="">Design</a>,<a href="">Print</a>,<a href="">Web</a>
+									</p>
+								</div>
+								<div class="work-view container"><a href=""><i class="search-icon fa fa-search"></i></a></div>
+							</div>
+							<img id="workImg4 img-con" class="works-images" src="../resources/ourworks4.jpg">
+						</div>
+					</div>
+					<div class="col-sm-4 img-con">
+						<div class="image-hover-con">
+							<div id="whitePage5" class="white-page"></div>
+							<div class="image-description">
+								<div class="work-name container"><p><a href="">Studio Birdsall</a></p></div>
+								<div class="work-tags container">
+									<p>
+										<a href="">Design</a>,<a href="">Marketing</a>,<a href="">Print</a>,<a href="">Web</a>
+									</p>
+								</div>
+								<div class="work-view container"><a href=""><i class="search-icon fa fa-search"></i></a></div>
+							</div>
+							<img id="workImg5" class="works-images" src="../resources/ourworks5.jpg">
+						</div>
+					</div>
+					<div class="col-sm-4 img-con">
+						<div class="image-hover-con">
+							<div id="whitePage6" class="white-page"></div>
+							<div class="image-description">
+								<div class="work-name container"><p><a href="">Fika Bar</a></p></div>
+								<div class="work-tags container">
+									<p>
+										<a href="">Design</a>
+									</p>
+								</div>
+								<div class="work-view container"><a href=""><i class="search-icon fa fa-search"></i></a></div>
+							</div>
+							<img id="workImg6" class="works-images" src="../resources/ourworks6.jpg">
+						</div>
+					</div>
 				</div>
 			</div>
-			<div id="ourClients">
-				<img id="logo1" src="../resources/forbes.png">
-				<img id="logo2"src="../resources/wsj.png">
-				<img id="logo3"src="../resources/entrepreneur.png">
-				<img id="logo4"src="../resources/ny.png">
+
+			<div id="ourClients" class="container">
+				<div class="container">
+
+					<div class="col-md-3 clientLogo">
+						<a href=""><img id="logo1" src="../resources/forbes.png"></a>
+					</div>
+
+					<div class="col-md-3 clientLogo">
+						<a href=""><img id="logo2"src="../resources/wsj.png"></a>
+					</div>
+
+					<div class="col-md-3 clientLogo">
+						<a href=""><img id="logo3"src="../resources/entrepreneur.png"></a>
+					</div>
+
+					<div class="col-md-3 clientLogo">
+						<a href=""><img id="logo4"src="../resources/ny.png"></a>
+					</div>
+
+				</div>
 			</div>
-			<div id="oneMoreBG"></div>
-			<div id="oneMorePage">
-				<p>One page or multi page, you choose!</p>
-				<h2><a href="">READ MORE</a></h2>
+
+			<div id="oneMorePage" class="container">
+				<div class="container-fluid col-md-12">
+					<p>One page or multi page, you choose!</p>
+					<h2><a href="">READ MORE</a></h2>
+				</div>
 			</div>
 		
-			<div id="pageBuilder">
-				<img id="logo4"src="../resources/monitor.png">
-				<h2>Advanced Page builder<h2><br/>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			
-		</div>
+			<div id="pageBuilder" class="container">
+				<div class="col-lg-12 container-fluid">
+				<div class="col-lg-6">
+					<img id="logo4"src="../resources/monitor.png">
+				</div>
+				<div class="col-lg-6">
+					<h2>Advanced Page builder<h2><br/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+				</div>
 			</div>
-			<div id="pageBuilderSlider">
-					<div id="sliderBG">
-						<img src="../resources/sliderbg.jpg">
-					</div>
+
+			<div id="pageBuilderSlider" class="container">
+				<div id="sliderBG" class="container-fluid">
+					<img src="../resources/sliderbg.jpg">
+				</div>
 			</div>
-			<div id="ourTeamContainer">
-				<div id="ourTeam">
-					<div id="teamMotto">
+
+			<div id="ourTeamContainer" class="container">
+				<div id="ourTeam" class="col-lg-12">
+					<div id="teamMotto" class="col-lg-3">
 						<h3>Meet our amazing team</h3>
 						<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero.</p>
 					</div>
-					<div id="staffImage">
-						<div id="staffOneImage">
-							<img src="../resources/staff1.jpg">
+					<div id="imgContainer" class="col-lg-9 container-fluid">
+						<div id="staffOneImage" class="col-sm-4">
+							<div class="image-hover-con">
+								<div class="image-description">
+									<div class="team-name"><p>Anna Smith</p></div>
+									<div class="team-position"><p>Art Director</p></div>
+									<div class="team-social">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-tumblr"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                  </div>
+								</div>
+								<img class="team-images-hovered" src="../resources/staff1.jpg">
+							</div>
 						</div>
-						<div id="staffTwoImage">
-							<img src="../resources/staff2.jpg">
+						<div id="staffTwoImage" class="col-sm-4">
+							<div class="image-hover-con">
+								<div class="image-description">
+									<div class="team-name"><p>James Smith</p></div>
+									<div class="team-position"><p>Designer</p></div>
+									<div class="team-social">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-tumblr"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                  </div>
+								</div>
+								<img class="team-images-hovered" src="../resources/staff2.jpg">
+							</div>
 						</div>
-						<div id="staffThreeImage">
-							<img src="../resources/staff3.jpg">
+						<div id="staffThreeImage" class="col-sm-4">
+							<div class="image-hover-con">
+								<div class="image-description">
+									<div class="team-name"><p>Tina Carter</p></div>
+									<div class="team-social">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-tumblr"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                  </div>
+								</div>
+								<img class="team-images-hovered" src="../resources/staff3.jpg">
+							</div>
 						</div>
-					</div>
+				</div>
 				</div>
 			</div>
-			<div id="ourMusicBG"></div>
-			<div id="ourMusic">
+
+			<div id="ourMusic" class="container">
 					<h1>Our Music</h1>
 			</div>
-			<div id="services">
-				<h3>Services</h3>
-				<div id="servicesContainer">
-					<div id="serviceOne">
-						<div class="iconContainer"><i class="fa fa-bolt"></i></div>
-						<div class="serviceTitle">Easy customizable</div>
+
+			<div id="services" class="container">
+				<div id="serviceH3" class="container-fluid">
+					<h3>Services</h3>
+				</div>
+				<div id="servicesContainer" class="container col-md-12">
+					<div id="serviceOne" class="col-sm-4 service-box">
+						<div class="icon-container"><i class="service-icon fa fa-bolt"></i></div>
+						<div class="service-title">Easy customizable</div>
 						<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense!</p>
-						<a class="serviceButton" href="">MORE</a>
+						<a class="service-button" href="">MORE</a>
 					</div>
-					<div id="serviceTwo">
-						<div class="iconContainer"><i class="fa fa-mobile-phone"></i></div>
-						<div class="serviceTitle">Responsive</div>
+					<div id="serviceTwo" class="col-sm-4 service-box">
+						<div class="icon-container"><i class="service-icon fa fa-mobile-phone"></i></div>
+						<div class="service-title">Responsive</div>
 						<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense!</p>
-						<a class="serviceButton" href="">MORE</a>
+						<a class="service-button" href="">MORE</a>
 					</div>
-					<div id="serviceThree">
-						<div class="iconContainer"><i class="fa fa-heart"></i></div>
-						<div class="serviceTitle">Color options</div>
+					<div id="serviceThree" class="col-sm-4 service-box">
+						<div class="icon-container"><i class="service-icon fa fa-heart"></i></div>
+						<div class="service-title">Color options</div>
 						<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense!</p>
-						<a class="serviceButton" href="">MORE</a>
+						<a class="service-button" href="">MORE</a>
 					</div>	
 				</div>
 			</div>
-			<div id="testimonials">
-				<div id="sliderContainer">
-					<div id="testimonialTitle">
+
+			<div id="testimonials" class="container">
+				<div id="sliderContainer" class="container-fluid">
+					<div id="testimonialTitle" class="col-lg-3 col-md-3">
 						<h3>What our clients say</h3>
 					</div>
-					<div id="testimonialSlider">
-
+					<div id="testimonialSlider" class="col-lg-9">
+							<ul id="testimonialSliderUl">
+								<li style="display: block;"><p class="fadeInUp animated">I am very satisfied with UmbrellaStudios, their theme looks awesome</p>
+								<div class="testimonial-name"><p class="fadeInUp animated">Vera Smith</p></div><li>
+								<li style="display: none;"><p class="fadeInUp animated">This theme works great and the customer support is brillant</p>
+								<div class="testimonial-name"><p class="fadeInUp animated">John Carter</p></div></li>
+							</ul>
+						<div id="pagination" class="">
+							<a href="#"><div id="testPaginationIcon1" class="test-paginationIcons"><i class="fa fa-circle"></i></div></a>
+							<a href="#"><div id="testPaginationIcon2" class="test-paginationIcons test-active"><i class="fa fa-circle-o"></i></div></a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div id="video">
-				
+
+			<div id="video" class="container">
+				<div class="container">
+				<iframe class="vimeo" src="http://player.vimeo.com/video/50201327?api=1" width="100%" height="300px" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+				</div>
 			</div>
-			<div id="skills">
-				<h3>Our Skills</h3>
-			</div>
-			<div id="buyLayer">
-					<div id="buyLayerContainer"><p><h3>Like this theme? Buy it now!</h3><a href="">MORE</a></p></div>
-			</div>
-			<div id="contactsBG"></div>
-			<div id="contacts">
-				<div id="contactsContainer">
-					<div id="contactsMotto">
-						<h3>Get in touch with us</h3>
+
+			<div id="skills" class="container">
+				<div class="container"><h3>Our Skills</h3></div>
+				<div class="container-fluid col-lg-12">
+					<div class="skill-container col-lg-3">
+						<div class="chart">
+							<div id="radialProgress1" class="radial-progress" data-progress="0">
+								<div class="circle">
+									<div class="mask full">
+										<div class="fill"></div>
+									</div>
+									<div class="mask half">
+										<div class="fill"></div>
+										<div class="fill fix"></div>
+									</div>
+									<div class="shadow"></div>
+								</div>
+								<div class="inset">
+									<div class="percentage"></div>
+								</div>
+							</div>
+							<div class="skill-title"><p>Photoshop</p></div>
+						</div>
+						
 					</div>
-					<div id="contactsForm">
+					<div class="skill-container col-lg-3">
+						<div class="chart">
+							<div id="radialProgress2" class="radial-progress" data-progress="0">
+								<div class="circle">
+									<div class="mask full">
+										<div class="fill"></div>
+									</div>
+									<div class="mask half">
+										<div class="fill"></div>
+										<div class="fill fix"></div>
+									</div>
+									<div class="shadow"></div>
+								</div>
+								<div class="inset">
+									<div class="percentage"></div>
+								</div>
+							</div>
+							<div class="skill-title"><p>Illustrator</p></div>
+						</div>
+						
+					</div>
+					<div class="skill-container col-lg-3">
+						<div class="chart">
+							<div id="radialProgress3" class="radial-progress" data-progress="0">
+								<div class="circle">
+									<div class="mask full">
+										<div class="fill"></div>
+									</div>
+									<div class="mask half">
+										<div class="fill"></div>
+										<div class="fill fix"></div>
+									</div>
+									<div class="shadow"></div>
+								</div>
+								<div class="inset">
+									<div class="percentage"></div>
+								</div>
+							</div>
+							<div class="skill-title"><p>Indesign</p></div>
+						</div>
+						
+					</div>
+					<div class="skill-container col-lg-3">
+						<div class="chart">
+							<div id="radialProgress4" class="radial-progress" data-progress="0">
+								<div class="circle">
+									<div class="mask full">
+										<div class="fill"></div>
+									</div>
+									<div class="mask half">
+										<div class="fill"></div>
+										<div class="fill fix"></div>
+									</div>
+									<div class="shadow"></div>
+								</div>
+								<div class="inset">
+									<div class="percentage"></div>
+								</div>
+							</div>
+							<div class="skill-title"><p>After Effects</p></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div id="buyLayer" class="container">
+					<div id="buyLayerContainer" class="col-lg-12">Like this theme? Buy it now!<a href="">MORE</a></div>
+			</div>
+
+			<div id="contacts" class="container">
+				<div id="contactsContainer" class="container">
+					<div id="contactsMotto" class="col-md-3">
+						<h1>Get in touch with us</h1>
+					</div>
+					<div id="contactsForm" class="col-md-5">
 						<input class="text-field" type="text" maxlength="500" placeholder="Name">
 						<input class="text-field" type="text" maxlength="500" placeholder="Email">
 						<textarea id="textArea" placeholder="Message"></textarea>
 						<input type="submit" value="Send" id="buttonName">
 					</div>
-					<div id="widgets">
+					<div id="widgets" class="col-md-4">
 						<div id="address">
 							<h4>Address</h4>
 							<p>P. Sherman <br/>
@@ -179,14 +490,16 @@
 								<a target="_blank" href="https://www.google.com"><div class="link-box"><i class="fa fa-google-plus"></i></div></a>
 							</div>
 						</div>
-						
 					</div>
 				</div>
+				<a href="#homeContainer"><div id="arrowUp"><i class="fa fa-arrow-up"></i></div></a>
 			</div>
 		</div>
 	</body>
-	<script type="text/javascript" src = "JS/jquery-2.1.0.js"></script>
-	<script type="text/javascript" src = "JS/main.js"></script>
+	<script type="text/javascript" src="JS/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="bootstrap-3.1.1-dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="JS/jquery.smoothscroll.js"></script>
+	<script type="text/javascript" src="JS/main.js"></script>
 
 </html>
 
