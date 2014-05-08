@@ -32,46 +32,6 @@
         $( "#navigations" ).fadeOut("fast");
       }
 
-      if ($(this).scrollTop() >= worktop){
-        $( ".nav-active" ).removeClass("nav-active");
-        $( "#workNav" ).addClass("nav-active");
-        $( ".nav-li a" ).css("color", "#909090");
-        $( "#workNav a" ).css("color", "black");
-      }else{
-        $( ".nav-active" ).removeClass("nav-active");
-        $( "#homeNav" ).addClass("nav-active");
-        $( ".nav-li a" ).css("color", "#909090");
-        $( "#homeNav a" ).css("color", "black");
-      }
-
-      if ($(this).scrollTop() >= clienttop - 60){
-        $( ".nav-active" ).removeClass("nav-active");
-        $( "#clientsNav" ).addClass("nav-active");
-        $( ".nav-li a" ).css("color", "#909090");
-        $( "#clientsNav a" ).css("color", "black");
-      }
-
-      if ($(this).scrollTop() >= teamtop - 60){
-        $( ".nav-active" ).removeClass("nav-active");
-        $( "#teamNav" ).addClass("nav-active");
-        $( ".nav-li a" ).css("color", "#909090");
-        $( "#teamNav a" ).css("color", "black");
-      }
-
-      if ($(this).scrollTop() >= musictop - 60){
-        $( ".nav-active" ).removeClass("nav-active");
-        $( "#musicNav" ).addClass("nav-active");
-        $( ".nav-li a" ).css("color", "#909090");
-        $( "#musicNav a" ).css("color", "black");
-      }
-
-      if ($(this).scrollTop() >= servicestop - 60){
-        $( ".nav-active" ).removeClass("nav-active");
-        $( "#serviceNav" ).addClass("nav-active");
-        $( ".nav-li a" ).css("color", "#909090");
-        $( "#serviceNav a" ).css("color", "black");
-      }
-
     });
   
     $('#work1Link, #workImg1Search').click(function(){

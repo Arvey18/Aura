@@ -41,7 +41,6 @@ body {
       top: -10px; }
     #homeContainer #navigations a {
       text-decoration: none;
-      color: #909090;
       padding: 10px 0px;
       margin: 0 20px; }
     #homeContainer #navigations img {
@@ -51,10 +50,6 @@ body {
       top: -4px; }
     #homeContainer #navigations a:hover {
       color: black; }
-
-.nav > .nav-active > a {
-  border-bottom: 3px solid #8dd831;
-  margin: 0 auto; }
 
 #logoContainer {
   padding-top: 100px;
