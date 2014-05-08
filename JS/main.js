@@ -7,8 +7,40 @@
   var servicestop = $('#services').offset().top;
   var top = $('#homeContainer').outerHeight();
   var bottom = $('#ourWorks').outerHeight();
-  var totHeight = $(window).height();
+  // var totHeight = $(window).height();
 
+
+  $('#homeContainer').on("loadedmetadata", scaleBg);
+  $(window).on("resize", scaleBg);
+
+  function scaleBg(){
+
+    var windowHeight = $(window).height();
+    var windowWidth = $(window).width();
+
+    var homeContainerHeight = $('#homeContainer')[0].windowHeight;
+    var homeContainerWidth = $('#homeContainer')[0].windowWidth;
+
+    var heightScaleFactor = windowHeight / homeContainerHeight;
+    var widthScaleFactor = windowWidth / homeContainerWidth;
+
+    if (widthScaleFactor > heightScaleFactor){
+
+      var scale = widthScaleFactor;
+
+    }else{
+
+      var scale = heightScaleFactor;
+
+    }
+
+    var scaleHomeHeight = homeContainerHeight * scale;
+    var scaleHomeWidth = homeContainerWidth * scale;
+
+    $('#homeContainer').height(scaleHomeHeight);
+    $('#homeContainer').height(scaleHomeWidth);
+
+  }
 
     // Navigation fadeIn Effect and active effect
     $(window).scroll(function() {
