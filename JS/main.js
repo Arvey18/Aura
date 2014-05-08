@@ -5,42 +5,19 @@
   var teamtop = $('#ourTeamContainer').offset().top;
   var musictop = $('#ourMusic').offset().top;
   var servicestop = $('#services').offset().top;
-  var top = $('#homeContainer').outerHeight();
-  var bottom = $('#ourWorks').outerHeight();
-  // var totHeight = $(window).height();
 
-
-  $('#homeContainer').on("loadedmetadata", scaleBg);
-  $(window).on("resize", scaleBg);
-
-  function scaleBg(){
-
-    var windowHeight = $(window).height();
-    var windowWidth = $(window).width();
-
-    var homeContainerHeight = $('#homeContainer')[0].windowHeight;
-    var homeContainerWidth = $('#homeContainer')[0].windowWidth;
-
-    var heightScaleFactor = windowHeight / homeContainerHeight;
-    var widthScaleFactor = windowWidth / homeContainerWidth;
-
-    if (widthScaleFactor > heightScaleFactor){
-
-      var scale = widthScaleFactor;
-
+    if($(window).width() > 768){
+        $("#homeContainer").css("height",$(window).height());
     }else{
-
-      var scale = heightScaleFactor;
-
+        $("#homeContainer").css("height","100%");
     }
-
-    var scaleHomeHeight = homeContainerHeight * scale;
-    var scaleHomeWidth = homeContainerWidth * scale;
-
-    $('#homeContainer').height(scaleHomeHeight);
-    $('#homeContainer').height(scaleHomeWidth);
-
-  }
+    $(window).resize(function(){
+        if($(window).width() > 768){
+            $("#homeContainer").css("height",$(window).height());
+        }else{
+            $("#homeContainer").css("height","100%");
+        }
+    });
 
     // Navigation fadeIn Effect and active effect
     $(window).scroll(function() {
