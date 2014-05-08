@@ -10,6 +10,19 @@
   var totHeight = $(window).height();
 
 
+    if($(window).width() > 768){
+        $("#homeContainer").css("height",$(window).height());
+    }else{
+        $("#homeContainer").css("height","100%");
+    }
+    $(window).resize(function(){
+        if($(window).width() > 768){
+            $("#homeContainer").css("height",$(window).height());
+        }else{
+            $("#homeContainer").css("height","100%");
+        }
+    });
+
     // Navigation fadeIn Effect and active effect
     $(window).scroll(function() {
 

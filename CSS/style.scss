@@ -1,16 +1,11 @@
 
-html, body{
+body{
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100%;
 	font-family: 'Raleway', Arial, sans-serif !important;
 }
-
-// body > #homeContainer{
-// 	width: 100%;
-// 	height: 100%;
-// }
 
 #homeContainer{
 	background: url('../resources/homepage-bg.jpg') no-repeat center center fixed; 
@@ -95,9 +90,10 @@ html, body{
 	padding: 80px 0px;
 	ul{
 		list-style: none;
+
 	}
 	li{
-
+		
 	}
 	#pagination{
 		text-align: center;
@@ -448,7 +444,6 @@ html, body{
 	padding: 70px 0px;
 	z-index: 5;
 	h1{
-		
 		font-size: 48px;
 		color: #fff;
 	}
@@ -615,9 +610,11 @@ html, body{
 
 #video{
 	position: relative;
-	background: black;
 	width: 100%;
 	height: 300px;
+	overflow: hidden; 
+	margin: 0;
+	padding: 0;
 }
 
 #skills{
@@ -1025,7 +1022,7 @@ html, body{
 		display: block;
 }
 
-	
+
 	img{
 		max-width: 100%;
 		height: auto;
@@ -1078,19 +1075,13 @@ div{
 }
 
 .music_player_container {
-height: 70px;
-	
-height: auto;
-	
-background: #353434;
-	/*
-	opacity: 0.88;
-	filter: alpha(opacity=80); */ /* For IE8 and earlier */
-	
-margin: 10px 0;
-/* 	padding: 25px; */
-	
-padding: 19px;
+	height: 70px;
+	height: auto;
+	height: auto;
+	background: #353434;
+	margin: 10px 0;
+	margin: 10px 0;
+	padding: 19px;
 }
 
 
@@ -1187,4 +1178,17 @@ padding: 19px;
   color: white;
   font-weight: bold;
 }
+
 /*End: Playlist*/
+
+// #video_background { 
+// 	bottom: 0px;
+// 	left: 0px;
+// 	min-width: 100%;
+// 	min-height: 100%;
+// 	width: 100%;
+// 	height: 100%;
+// 	margin: 0;
+// 	padding: 0;
+// 	z-index: -1000; 
+// }

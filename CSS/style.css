@@ -1,4 +1,4 @@
-html, body {
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -505,9 +505,11 @@ html, body {
 
 #video {
   position: relative;
-  background: black;
   width: 100%;
-  height: 300px; }
+  height: 300px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
 
 #skills {
   position: relative;
@@ -894,13 +896,10 @@ div {
 .music_player_container {
   height: 70px;
   height: auto;
+  height: auto;
   background: #353434;
-  /*
-  opacity: 0.88;
-  filter: alpha(opacity=80); */
-  /* For IE8 and earlier */
   margin: 10px 0;
-  /* 	padding: 25px; */
+  margin: 10px 0;
   padding: 19px; }
 
 #soundcloud > .container > .music_player_container {
