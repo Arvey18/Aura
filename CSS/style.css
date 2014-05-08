@@ -518,7 +518,7 @@ body {
   text-align: center;
   z-index: 5;
   color: white;
-  padding: 70px 0; }
+  padding-top: 70px; }
   #skills h3 {
     position: relative;
     font-size: 35px;
@@ -751,8 +751,7 @@ body {
 .skill-title {
   margin: 0;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 10px; }
+  padding-top: 20px; }
   .skill-title p {
     color: white;
     font-weight: 900;
@@ -987,3 +986,5 @@ div {
   font-weight: bold; }
 
 /*End: Playlist*/
+#skillContainer {
+  padding-top: 40px; }

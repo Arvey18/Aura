@@ -66,7 +66,6 @@ body{
 
 #logoContainer{
 	padding-top: 100px;
-	// width: 120px;
 	height: auto;
 	margin: 0 auto;
 	position: relative;
@@ -621,7 +620,7 @@ body{
 	text-align: center;
 	z-index: 5;
 	color: white;
-	padding: 70px 0;
+	padding-top: 70px;
 	h3{
 		position: relative;
 		font-size: 35px;
@@ -897,7 +896,6 @@ body{
 	margin: 0;
 	text-align: center;
 	padding-top: 20px;
-	padding-bottom: 10px;
 	p{
 		color: white;
 		font-weight: 900;
@@ -1188,3 +1186,9 @@ div{
 // 	padding: 0;
 // 	z-index: -1000; 
 // }
+
+#skillContainer{
+
+	padding-top: 40px;
+
+}
