@@ -3481,3 +3481,19 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     -o-animation-duration: 0.25s;
     animation-duration: 0.25s;
 }
+
+.wpb_start_animation.wpb_left-to-right {
+  -webkit-animation: wpb_ltr 0.7s 1 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* Safari 4+ */
+
+  -moz-animation: wpb_ltr 0.7s 1 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* Fx 5+ */
+
+  -o-animation: wpb_ltr 0.7s 1 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* Opera 12+ */
+
+  animation: wpb_ltr 0.7s 1 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* IE 10+ */
+
+  opacity: 1;
+}

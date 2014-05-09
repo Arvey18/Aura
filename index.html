@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Aura</title>
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="CSS/mep-feature-playlist.css" />
@@ -11,7 +12,18 @@
 		<link rel="stylesheet" href="bootstrap-3.1.1-dist/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:200">
 	</head>
-	<body data-spy="scroll" data-target="#navbar-collapse" data-offset="60">
+	<body data-spy="scroll" data-target="#navbar-collapse" data-offset="61">
+			<div class="loader" style="display: none;">
+			 <div class="bubblingG">
+			    <span id="bubblingG_1">
+			    </span>
+			    <span id="bubblingG_2">
+			    </span>
+			    <span id="bubblingG_3">
+			    </span>
+			 </div>
+			</div>
+
 			<div id="workTitleLinks" class="container">
 				<div id="closeButton" class="container">
 					<a href="#" class="close-work">
@@ -76,13 +88,13 @@
 						</div>
 						<div class="collapse navbar-collapse" id="navbar-collapse">
 							<ul class="nav navbar-nav navbar-right">
-								<li id="homeNav" class="nav-li"><a class="scroll" href="#homeContainer">HOME</a></li>
-								<li id="workNav" class="nav-li"><a class="scroll" href="#ourWorks">OUR WORKS</a></li>
-								<li id="clientsNav" class="nav-li"><a class="scroll" href="#ourClients">OUR CLIENTS</a></li>
-								<li id="teamNav" class="nav-li"><a class="scroll" href="#ourTeamContainer">OUR TEAM</a></li>
-								<li id="musicNav" class="nav-li"><a class="scroll" href="#ourMusic">OUR MUSIC</a></li>
-								<li id="serviceNav" class="nav-li"><a class="scroll" href="#services">SERVICES</a></li>
-								<li id="subPagesNav" class="nav-li"><a class="scroll" href="#">MORE PAGES</a></li>
+								<li class="nav-li"><a id="homeNav" class="" href="#homeContainer">HOME</a></li>
+								<li class="nav-li"><a id="workNav" class="" href="#ourWorks">OUR WORKS</a></li>
+								<li class="nav-li"><a id="clientsNav" class="nav-scroll-60" href="#ourClients">OUR CLIENTS</a></li>
+								<li class="nav-li"><a id="teamNav" class="nav-scroll-60" href="#ourTeamContainer">OUR TEAM</a></li>
+								<li class="nav-li"><a id="musicNav" class="nav-scroll-60" href="#ourMusic">OUR MUSIC</a></li>
+								<li class="nav-li"><a id="serviceNav" class="nav-scroll-60" href="#services">SERVICES</a></li>
+								<li class="nav-li"><a id="subPagesNav" class="nav-scroll-60" href="#">MORE PAGES</a></li>
 							</ul>
 						</div>
 					</div>
@@ -111,20 +123,19 @@
 				</div>
 				<div id="ourWorksNav">
 					<ul class="col-sm-12">
-						<li><a id="allworks" class="works-nav"  href="#">All</a></li>
-						<li><a id="designWorks" class="works-nav" href="#">Design</a></li>
-						<li><a id="illuWorks" class="works-nav" href="#">Illustration</a></li>
-						<li><a id="marketingWorks" class="works-nav" href="#">Marketing</a></li>
-						<li><a id="printWorks" class="works-nav" href="#">Print</a></li>
-						<li><a id="typWorks" class="works-nav" href="#">Typography</a></li>
-						<li><a id="webWorks" class="works-nav" href="#">Web</a></li>
+						<li><a id="allworks" class="works-nav" data-category="allWorks" href="#">All</a></li>
+						<li><a id="designWorks" class="works-nav" data-category="allDesign" href="#">Design</a></li>
+						<li><a id="illuWorks" class="works-nav" data-category="allIllu" href="#">Illustration</a></li>
+						<li><a id="marketingWorks" class="works-nav" data-category="allMarketing" href="#">Marketing</a></li>
+						<li><a id="printWorks" class="works-nav" data-category="allPrint" href="#">Print</a></li>
+						<li><a id="typWorks" class="works-nav" data-category="allTyp" href="#">Typography</a></li>
+						<li><a id="webWorks" class="works-nav" data-category="allWeb" href="#">Web</a></li>
 					</ul>
 				</div>
 				<div id="ourWorksImg" class="col-md-12">
 					<div class="">
 					<div class="col-sm-4 img-con">
 						<div class="image-hover-con">
-							<div id="whitePage1" class="white-page"></div>
 							<div class="image-description">
 								<div id="work1Link" class="work-name container"><p><a href="#">Through time</a></p></div>
 								<div class="work-tags container">
@@ -134,12 +145,11 @@
 								</div>
 								<div class="work-view container"><a href=""><i id="workImg1Search" class="search-icon fa fa-search"></i></a></div>
 							</div>
-							<img id="workImg1" class="works-images" src="resources/ourworks1.jpg">
+							<img id="workImg1" class="works-images allDesign allMarketing allPrint" src="resources/ourworks1.jpg">
 						</div>
 					</div>
 					<div class="col-sm-4 img-con">
 						<div class="image-hover-con">
-							<div id="whitePage2" class="white-page"></div>
 							<div class="image-description">
 								<div class="work-name container"><p><a href="">Flow eight</a></p></div>
 								<div class="work-tags container">
@@ -149,12 +159,11 @@
 								</div>
 								<div class="work-view container"><a href=""><i class="search-icon fa fa-search"></i></a></div>
 							</div>
-							<img id="workImg2" class="works-images" src="resources/ourworks2.jpg">
+							<img id="workImg2" class="works-images allTyp" src="resources/ourworks2.jpg">
 						</div>
 					</div>
 					<div class="col-sm-4 img-con">
 						<div class="image-hover-con">
-							<div id="whitePage3" class="white-page"></div>
 							<div class="image-description">
 								<div class="work-name container"><p><a href="">Midlands branding</a></p></div>
 								<div class="work-tags container">
@@ -164,12 +173,11 @@
 								</div>
 								<div class="work-view container"><a href=""><i class="search-icon fa fa-search"></i></a></div>
 							</div>
-							<img id="workImg3" class="works-images" src="resources/ourworks3.jpg">
+							<img id="workImg3" class="works-images allDesign allIllu allPrint allWeb" src="resources/ourworks3.jpg">
 						</div>
 					</div>
 					<div class="col-sm-4 img-con">
 						<div class="image-hover-con">
-							<div id="whitePage4" class="white-page"></div>
 							<div class="image-description">
 								<div class="work-name container"><p><a href="">Knowing</a></p></div>
 								<div class="work-tags container">
@@ -179,12 +187,11 @@
 								</div>
 								<div class="work-view container"><a href=""><i class="search-icon fa fa-search"></i></a></div>
 							</div>
-							<img id="workImg4 img-con" class="works-images" src="resources/ourworks4.jpg">
+							<img id="workImg4" class="works-images allIllu allMarketing allTyp" src="resources/ourworks4.jpg">
 						</div>
 					</div>
 					<div class="col-sm-4 img-con">
 						<div class="image-hover-con">
-							<div id="whitePage5" class="white-page"></div>
 							<div class="image-description">
 								<div class="work-name container"><p><a href="">Studio Birdsall</a></p></div>
 								<div class="work-tags container">
@@ -194,12 +201,11 @@
 								</div>
 								<div class="work-view container"><a href=""><i class="search-icon fa fa-search"></i></a></div>
 							</div>
-							<img id="workImg5" class="works-images" src="resources/ourworks5.jpg">
+							<img id="workImg5" class="works-images allIllu allTyp" src="resources/ourworks5.jpg">
 						</div>
 					</div>
 					<div class="col-sm-4 img-con">
 						<div class="image-hover-con">
-							<div id="whitePage6" class="white-page"></div>
 							<div class="image-description">
 								<div class="work-name container"><p><a href="">Fika Bar</a></p></div>
 								<div class="work-tags container">
@@ -209,7 +215,7 @@
 								</div>
 								<div class="work-view container"><a href=""><i class="search-icon fa fa-search"></i></a></div>
 							</div>
-							<img id="workImg6" class="works-images" src="resources/ourworks6.jpg">
+							<img id="workImg6" class="works-images allIllu allMarketing allPrint allTyp allWeb" src="resources/ourworks6.jpg">
 						</div>
 					</div>
 
@@ -219,23 +225,23 @@
 
 			<div id="ourClients" class="container">
 				<div class="container">
-
-					<div class="col-md-3 clientLogo">
+				<div class="col-lg-12">
+					<div class="col-md-3 col-sm-6 client-logo" data-scoffset="100">
 						<a href=""><img id="logo1" src="resources/forbes.png"></a>
 					</div>
 
-					<div class="col-md-3 clientLogo">
+					<div class="col-md-3 col-sm-6 client-logo" data-scoffset="100">
 						<a href=""><img id="logo2"src="resources/wsj.png"></a>
 					</div>
 
-					<div class="col-md-3 clientLogo">
+					<div class="col-md-3 col-sm-6 client-logo" data-scoffset="100">
 						<a href=""><img id="logo3"src="resources/entrepreneur.png"></a>
 					</div>
 
-					<div class="col-md-3 clientLogo">
+					<div class="col-md-3 col-sm-6 client-logo" data-scoffset="100">
 						<a href=""><img id="logo4"src="resources/ny.png"></a>
 					</div>
-
+				</div>
 				</div>
 			</div>
 
@@ -251,10 +257,10 @@
 			<div id="pageBuilder" class="container">
 				<div class="container">
 				<div class="col-lg-12 container-fluid">
-				<div class="col-lg-6">
+				<div class="page-builder-monitor col-lg-6" data-scoffset="10">
 					<img id="logo4"src="resources/monitor.png">
 				</div>
-				<div class="col-lg-6">
+				<div class="page-builder-des col-lg-6" data-scoffset="10">
 					<h2>Advanced Page builder<h2><br/>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
@@ -276,7 +282,7 @@
 						<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero.</p>
 					</div>
 					<div id="imgContainer" class="col-lg-9 container-fluid">
-						<div id="staffOneImage" class="col-sm-4">
+						<div id="staffOneImage" class="team-img-fadeIn col-sm-4" data-scoffset="10">
 							<div class="image-hover-con">
 								<div class="image-description">
 									<div class="team-name"><p>Anna Smith</p></div>
@@ -287,10 +293,10 @@
                     <a href="#"><i class="fa fa-dribbble"></i></a>
                   </div>
 								</div>
-								<img class="team-images-hovered" src="resources/staff1.jpg">
+								<img class="team-images-hovered" src="resources/staff1.jpg" >
 							</div>
 						</div>
-						<div id="staffTwoImage" class="col-sm-4">
+						<div id="staffTwoImage" class="team-img-fadeIn col-sm-4" data-scoffset="10">
 							<div class="image-hover-con">
 								<div class="image-description">
 									<div class="team-name"><p>James Smith</p></div>
@@ -304,7 +310,7 @@
 								<img class="team-images-hovered" src="resources/staff2.jpg">
 							</div>
 						</div>
-						<div id="staffThreeImage" class="col-sm-4">
+						<div id="staffThreeImage" class="team-img-fadeIn col-sm-4" data-scoffset="10">
 							<div class="image-hover-con">
 								<div class="image-description">
 									<div class="team-name"><p>Tina Carter</p></div>
@@ -332,24 +338,24 @@
 			</div>
 
 			<div id="services" class="container">
-				<div id="serviceH3" class="container-fluid">
+				<div id="serviceH3" class="service-fadeIn container-fluid" data-scoffset="5">
 					<h3>Services</h3>
 				</div>
 				<div class="container">
-				<div id="servicesContainer" class="container col-md-12">
+				<div id="servicesContainer" class="service-fadeIn container col-md-12" data-scoffset="5">
 					<div id="serviceOne" class="col-sm-4 service-box">
 						<div class="icon-container"><i class="service-icon fa fa-bolt"></i></div>
 						<div class="service-title">Easy customizable</div>
 						<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense!</p>
 						<a class="service-button" href="">MORE</a>
 					</div>
-					<div id="serviceTwo" class="col-sm-4 service-box">
-						<div class="icon-container"><i class="service-icon fa fa-mobile-phone"></i></div>
+					<div id="serviceTwo" class="service-fadeIn col-sm-4 service-box" data-scoffset="5">
+						<div class="icon-container"><i class="service-icon fa fa-mobile-phone" ></i></div>
 						<div class="service-title">Responsive</div>
 						<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense!</p>
 						<a class="service-button" href="">MORE</a>
 					</div>
-					<div id="serviceThree" class="col-sm-4 service-box">
+					<div id="serviceThree" class="service-fadeIn col-sm-4 service-box" data-scoffset="5">
 						<div class="icon-container"><i class="service-icon fa fa-heart"></i></div>
 						<div class="service-title">Color options</div>
 						<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense!</p>
@@ -391,7 +397,7 @@
 				<div class="container"><h3>Our Skills</h3></div>
 				<div id="skillContainer" class="container">
 				<div class="container-fluid col-lg-12">
-					<div class="skill-container col-lg-3">
+					<div class="skill-container col-lg-3" data-scoffset="1">
 						<div class="chart">
 							<div id="radialProgress1" class="radial-progress" data-progress="0">
 								<div class="circle">
@@ -412,7 +418,7 @@
 						</div>
 
 					</div>
-					<div class="skill-container col-lg-3">
+					<div class="skill-container col-lg-3" data-scoffset="1">
 						<div class="chart">
 							<div id="radialProgress2" class="radial-progress" data-progress="0">
 								<div class="circle">
@@ -433,7 +439,7 @@
 						</div>
 
 					</div>
-					<div class="skill-container col-lg-3">
+					<div class="skill-container col-lg-3" data-scoffset="1">
 						<div class="chart">
 							<div id="radialProgress3" class="radial-progress" data-progress="0">
 								<div class="circle">
@@ -454,7 +460,7 @@
 						</div>
 
 					</div>
-					<div class="skill-container col-lg-3">
+					<div class="skill-container col-lg-3" data-scoffset="1">
 						<div class="chart">
 							<div id="radialProgress4" class="radial-progress" data-progress="0">
 								<div class="circle">
@@ -480,7 +486,7 @@
 			</div>
 
 			<div id="buyLayer" class="container">
-					<div id="buyLayerContainer" class="col-lg-12">Like this theme? Buy it now!<a href="">MORE</a></div>
+					<div id="buyLayerContainer" class="buy-layer-slide col-lg-12" data-scoffset="5">Like this theme? Buy it now!<a href="">MORE</a></div>
 			</div>
 
 			<div id="contacts" class="container">
@@ -512,16 +518,16 @@
 						</div>
 					</div>
 				</div>
-				<a href="#homeContainer"><div id="arrowUp"><i class="fa fa-arrow-up"></i></div></a>
+				<a id="arrowUp" href="#homeContainer"><div ><i class="fa fa-arrow-up"></i></div></a>
 			</div>
-	</body>
-	<script type="text/javascript" src="JS/jquery-2.1.0.js"></script>
-	<script type="text/javascript" src="JS/mep-feature-playlist.js"></script>
-	<script type="text/javascript" src="JS/mediaelement-and-player.min.js"></script>
-	</body>
-	<script type="text/javascript" src="JS/jquery-2.1.0.js"></script>
-	<script type="text/javascript" src="bootstrap-3.1.1-dist/js/bootstrap.js"></script>
-	<script type="text/javascript" src="JS/jquery.smoothscroll.js"></script>
-	<script type="text/javascript" src="JS/main.js"></script>
-
+		</body>
+	
+		<script type="text/javascript" src="JS/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="JS/jquery.queryloader2.js"></script>
+		<script type="text/javascript" src="JS/waypoints.min.js"></script>
+		<script type="text/javascript" src="bootstrap-3.1.1-dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="JS/jquery.smoothscroll.js"></script>
+		<script type="text/javascript" src="JS/main.js"></script>
+		
+	
 </html>
